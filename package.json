@@ -25,6 +25,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "prepare": "husky install",
+    "preinstall": "husky install",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -50,8 +52,13 @@
   "devDependencies": {
     "@storybook/preset-create-react-app": "^10.0.8",
     "eslint-plugin-storybook": "^10.0.8",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
     "prop-types": "^15.8.1",
     "storybook": "^10.0.8",
     "webpack": "^5.103.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
   }
 }
