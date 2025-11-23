@@ -1,0 +1,12 @@
+#* 공통
+services:
+  mirero-ojt:
+    container_name: mirero-ojt # 안쓰면 매번 랜덤 이름이 생성됌
+    restart: always # 컨테이너가 종료되면 자동으로 재시작
+    # 컨테이너 로그 관리
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
