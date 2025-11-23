@@ -1,7 +1,14 @@
 {
   "root": true,
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "prettier"],
+  "plugins": [
+    "@typescript-eslint",
+    "prettier",
+    "react",
+    "react-hooks",
+    "import",
+    "jsx-a11y"
+  ],
   "parserOptions": {
     "project": "./tsconfig.json",
     "createDefaultProgram": true
@@ -20,17 +27,16 @@
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": ["warn", { "extensions": [".ts", ".tsx"] }],
-    "no-useless-catch": "off",
     "react/self-closing-comp": "off",
-    "semi": "off",
-    "import/extensions": [
+    "import/extensions": "off",
+    "import/prefer-default-export": "off",
+    "jsx-a11y/label-has-associated-control": [
       "error",
-      "ignorePackages",
       {
-        "ts": "never",
-        "tsx": "never"
+        "labelAttributes": ["htmlFor"]
       }
     ],
+
     "prettier/prettier": [
       "error",
       {
@@ -38,18 +44,12 @@
       }
     ],
     "linebreak-style": "off",
-    "no-use-before-define": "off",
-    "@typescript-eslint/no-use-before-define": "off",
-    "@typescript-eslint/no-unused-vars": "warn",
-    "import/prefer-default-export": "off",
-    "jsx-a11y/label-has-associated-control": [
-      2,
-      {
-        "labelAttributes": ["htmlFor"]
-      }
-    ],
     "no-unused-vars": "warn",
-    "operator-linebreak": "off",
-    "@typescript-eslint/no-explicit-any": "off"
+    "no-use-before-define": "off",
+    "no-useless-catch": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "operator-linebreak": "off"
   }
 }
