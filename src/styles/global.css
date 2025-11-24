@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "NotoSansKorean";
+  font-weight: normal;
+  src: url("../assets/fonts/NotoSans.ttf") format("truetype");
+}
+
+@layer base {
+  html {
+    @apply font-NotoSansKorean bg-white;
+  }
+}
