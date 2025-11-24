@@ -1,5 +1,5 @@
 function App() {
-  return <div>ojt</div>;
+  return <div>ojt</div>
 }
 
-export default App;
+export default App
