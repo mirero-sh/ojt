@@ -1,7 +1,7 @@
-name: "issue"
+name: "action"
 description: "개발 템플릿"
-title: ""
-labels: ""
+title: "🚀 "
+labels: ["action"]
 
 body:
   - type: textarea
@@ -11,6 +11,7 @@ body:
       placeholder: 기능에 대해 설명해주세요.
     validations:
       required: true
+
   - type: textarea
     attributes:
       label: TODO
